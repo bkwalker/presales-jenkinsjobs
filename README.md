@@ -13,7 +13,11 @@ Good source on how to pull jobs out of Jenkins
 * http://www.donaldsimpson.co.uk/2014/04/02/extracting-data-from-jenkins/
 
 Export a Job:
+```
 curl -o AOS_Build_Deploy_Test_Web.xml  http://dockerserver:8090/job/AOS_Build_Deploy_Test_Web/config.xml
+```
 
 Export a View:
+```
 curl -s http://dockerserver:8090/view/$viewName/config.xml -o $viewName.xml
+```
